@@ -9,8 +9,8 @@ build/
 ### yml 파일 무시
 src/main/resources/application.yml
 
-#**/SwaggerConfig.class
-#**/SwaggerConfig.java
+**/SwaggerConfig.class
+**/SwaggerConfig.java
 
 ### STS ###
 .apt_generated
