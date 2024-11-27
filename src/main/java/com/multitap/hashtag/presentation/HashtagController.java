@@ -42,5 +42,11 @@ public class HashtagController {
         return new BaseResponse<>(hashtagResponseVoList);
     }
 
+    @Operation(summary = "해시태그 수정", description = "해시태그를 등록합니다")
+    @PutMapping("/hashtag/{id}")
+    public BaseResponse<Void> changeHashtag(@RequestBody HashtagRequestVo hashtagRequestVo, @PathVariable Long id) {
+        hashtagService.changeHashtag(HashtagRequestDto.from(hashtagRequestVo), id);
+        return new BaseResponse<>();
+    }
 
 }

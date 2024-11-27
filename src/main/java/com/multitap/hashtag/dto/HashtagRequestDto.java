@@ -32,4 +32,11 @@ public class HashtagRequestDto {
                 .build();
     }
 
+    public Hashtag updateToEntity(HashtagRequestDto hashtagRequestDto, Hashtag hashtag) {
+        return Hashtag.builder()
+                .id(hashtag.getId())
+                .name(hashtagRequestDto.getName())
+                .orderNumber(hashtagRequestDto.getOrder())
+                .build();
+    }
 }
