@@ -10,4 +10,5 @@ public interface HashtagService {
 
     void addHashtag(HashtagRequestDto hashtagRequestDto);
     List<HashtagResponseDto> getHashtag();
+    void changeHashtag(HashtagRequestDto hashtagRequestDto, Long id);
 }
