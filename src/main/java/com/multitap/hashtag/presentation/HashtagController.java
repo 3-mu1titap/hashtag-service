@@ -23,6 +23,7 @@ public class HashtagController {
 
     private final HashtagService hashtagService;
 
+    //todo:
     @Operation(summary = "해시태그 등록", description = "해시태그를 등록합니다")
     @PostMapping("/hashtag")
     public BaseResponse<Void> addHashtag(@RequestBody HashtagRequestVo hashtagRequestVo) {
