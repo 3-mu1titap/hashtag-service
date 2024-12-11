@@ -10,25 +10,25 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class HashtagResponseDto {
 
-    private String name;
+    private String hashtagName;
     private Long hashtagId;
 
     @Builder
-    public HashtagResponseDto(String name, Long hashtagId) {
-        this.name = name;
+    public HashtagResponseDto(String hashtagName, Long hashtagId) {
+        this.hashtagName = hashtagName;
         this.hashtagId = hashtagId;
     }
 
     public static HashtagResponseDto from(Hashtag hashtag) {
         return HashtagResponseDto.builder()
-                .name(hashtag.getName())
+                .hashtagName(hashtag.getName())
                 .hashtagId(hashtag.getId())
                 .build();
     }
 
     public static HashtagResponseVo toVo(HashtagResponseDto hashtagResponseDto) {
         return HashtagResponseVo.builder()
-                .name(hashtagResponseDto.getName())
+                .hashtagName(hashtagResponseDto.getHashtagName())
                 .hashtagId(hashtagResponseDto.getHashtagId())
                 .build();
     }
