@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class HashtagResponseVo {
 
-    private String name;
+    private String hashtagName;
     private Long hashtagId;
 
     @Builder
-    public HashtagResponseVo(String name, Long hashtagId) {
-        this.name = name;
+    public HashtagResponseVo(String hashtagName, Long hashtagId) {
+        this.hashtagName = hashtagName;
         this.hashtagId = hashtagId;
     }
 }
