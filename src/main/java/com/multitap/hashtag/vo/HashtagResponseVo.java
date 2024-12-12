@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class HashtagResponseVo {
-// todo: vo  수정
+// todo: dev 수정 6
     private String hashtagName;
     private Long hashtagId;
 
